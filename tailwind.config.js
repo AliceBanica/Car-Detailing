@@ -6,6 +6,8 @@ export default {
             "home-img": "url('./src/assets/bg-image-home.png')",
             "contact-img": "url('./src/assets/orange-car.jpg')",
             "prices-img": "url('./src/assets/black-car.jpg')",
+            "interior-img": "url('./src/assets/bg-second-page.png')",
+            "exterior-img": "url('./src/assets/bg-ext.jpg')",
         }),
         extend: {},
         screens: {

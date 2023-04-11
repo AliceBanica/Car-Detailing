@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
 /* Hamburger Menu */
 .hamburger {
     cursor: pointer;
@@ -78,4 +85,13 @@
         ". . . . . . . . . . . . . . . . . . . . "
         ". . . . . . . . . . . . . . . . . . . . "
         ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+.title-page {
+    position: absolute;
+
+    padding: 1rem 3rem;
+    flex: 1;
+    background-color: black;
+    transform: skewX(-20deg);
 }
