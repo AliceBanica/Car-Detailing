@@ -25,8 +25,8 @@ const Navbar = () => {
                         <div className='relative'>
                             <span className='peer text-xl text-white cursor-pointer select-none'>Servicii</span>
 
-                            <div className="absolute hidden peer-hover:flex hover:flex w-[200px] flex-col pt-10 drop-shadow-lg" >
-                                <div className='mt-0 bg-neutral-400/50 text-white absolute -left-3 pl-3 pb-6 pt-3 rounded'>
+                            <div className="absolute hidden peer-hover:flex hover:flex w-[200px] flex-col pt-10 drop-shadow-lg z-50" >
+                                <div className='mt-0 bg-neutral-400/50 text-white absolute -left-3 pl-3 pb-6 pt-3 rounded '>
                                     <div className='absolute -top-[1.2rem] left-6 w-0 h-0 border-l-[1.2rem] border-l-transparent border-b-[1.2rem] border-b-neutral-400/50 border-r-[1.2rem] border-r-transparent'></div>
 
                                     <Link to="/detailing-interior" className='inline-block mb-[1rem] mt-[0.5rem] text-xl select-none group transition duration-300'>Detailing Interior

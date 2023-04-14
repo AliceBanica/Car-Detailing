@@ -1,6 +1,7 @@
 import React from 'react';
 import img1 from "../assets/bg-board.png";
 import img2 from "../assets/Picture5.jpg";
+import Footer from './Footer';
 
 const Gallery = () => {
     const sectionInfo = [["0", "Interior", img1, img2, 'interior -large img', "interior-vider"],
@@ -8,13 +9,13 @@ const Gallery = () => {
     ["2", "Canapele", img1, img2, 'canapea -large img', "canapea-vider"]];
 
 
-    const colors = ['#0B0909', '#44444C', '#0B0909'];
+    const colors = ['#0B0909', '#202024', '#0B0909'];
 
 
     return (
-        <section className='  text-white '>
+        <section className=' relative text-white '>
             <div className='w-full h-full '>
-                <div className='flex justify-center items-center h-[10rem] text-[2.2rem] bg-[#0B0909] z-30'>Galerie</div>
+                <div className='flex justify-center items-center h-[10rem] text-[2.2rem] bg-[#0B0909]'>Galerie</div>
                 <div className='flex flex-col justify-center items-center '>
                     {sectionInfo.map((info, index) => {
                         return <div style={{ backgroundColor: `${colors[index]}` }} className='-top-[10rem] relative w-[100%] h-screen border-b-2 border-red-500 -z-10'>
@@ -45,7 +46,9 @@ const Gallery = () => {
                     })}
                 </div>
             </div>
-
+            <div className='-mt-[10rem]'>
+                <Footer />
+            </div>
         </section>
     )
 }
