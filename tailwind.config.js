@@ -16,6 +16,11 @@ export default {
             lg: "976px",
             xl: "1440px",
         },
+        safelist: [
+            "animate-[fade-in_1s_ease-in-out]",
+            "animate-[slide-right_1s_ease-in-out]",
+            "animate-[fade-in-left_1s_ease-in-out]",
+        ],
     },
     plugins: [],
 };

@@ -11,20 +11,26 @@ const Footer = () => {
         <section className='bg-[#202024] '>
             <div className='flex flex-col lg:flex-row justify-around xl:h-[14rem] w-full lg:w-[80%] xl:w-[60%] mx-auto  text-white py-[3rem] '>
                 <div className='flex flex-col md:flex-row md:justify-around md:w-full'>
-                    <div className='flex justify-center items-center flex-col w-full mb-[2rem] xl:mb-0'>
-                        <img src={address} className="select-none w-[2.5rem] mb-[1rem]" alt="" />
+                    <div className='flex justify-center items-center flex-col w-[12rem] mx-auto md:w-full mb-[2rem] xl:mb-0'>
                         <span className='select-none mb-[0.6rem] xl:mb-[1rem] xl:text-[1.5rem]'>Adresa</span>
-                        <span className='text-[0.7rem] xl:text-[1rem]'>Baicoi, Str. Dunarii, Nr.4</span>
+                        <div className='flex justify-start md:justify-center items-center w-full'>
+                            <img src={address} className="select-none w-[2.3rem]" alt="" />
+                            <span className='text-[0.7rem] xl:text-[1rem] ml-[0.5rem]'>Baicoi, Str. Dunarii, Nr.4</span>
+                        </div>
                     </div>
-                    <div className='flex justify-center items-center flex-col w-full mb-[2rem] xl:mb-0'>
-                        <img src={phone} className="select-none w-[2.5rem] mb-[1rem]" alt="" />
+                    <div className='flex justify-center items-center flex-col w-[12rem] mx-auto md:w-full mb-[2rem] xl:mb-0'>
                         <span className='select-none  mb-[0.6rem] xl:mb-[1rem] xl:text-[1.5rem]'>Telefon</span>
-                        <span className='text-[0.7rem] xl:text-[1rem]'>0775 267 631</span>
+                        <div className='flex justify-start md:justify-center items-center w-full'>
+                            <img src={phone} className="select-none w-[2.3rem]" alt="" />
+                            <span className='text-[0.7rem] xl:text-[1rem] ml-[0.5rem]'>0775 267 631</span>
+                        </div>
                     </div>
-                    <div className='flex justify-center items-center flex-col w-full mb-[2rem] xl:mb-0' >
-                        <img src={email} className="select-none w-[2.5rem] mb-[1rem]" alt="" />
+                    <div className='flex justify-center items-center flex-col w-[12rem] mx-auto md:w-full mb-[2rem] xl:mb-0' >
                         <span className='select-none  mb-[0.6rem] xl:mb-[1rem] xl:text-[1.5rem]'>Email</span>
-                        <span className='text-[0.7rem] xl:text-[1rem]'>magic.detailing.auto@gmail.com</span>
+                        <div className='flex justify-start md:justify-center items-center w-full'>
+                            <img src={email} className="select-none w-[2.2rem]" alt="" />
+                            <span className='text-[0.7rem] xl:text-[1rem] ml-[0.5rem]'>magic.detailing.auto@gmail.com</span>
+                        </div>
                     </div>
                 </div>
                 <div className='flex justify-center items-center flex-col'>

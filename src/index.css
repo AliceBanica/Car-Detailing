@@ -106,3 +106,29 @@ html {
     right: 0;
     top: 2rem;
 }
+
+#contact,
+#home {
+    -webkit-animation: slide 3s forwards;
+    animation: slide 3s forwards;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
