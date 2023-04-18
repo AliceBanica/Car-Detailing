@@ -109,11 +109,46 @@ html {
 
 #contact,
 #home {
-    -webkit-animation: slide 3s forwards;
-    animation: slide 3s forwards;
+    -webkit-animation: slideLeft 3s forwards;
+    animation: slideLeft 3s forwards;
 }
 
-@-webkit-keyframes slide {
+#prices-title {
+    animation: fadeInTitle 2.5s;
+}
+
+#prices-container {
+    animation: slideBottom 1.5s;
+}
+#int-title {
+    animation: slideBottomTitle 2.5s;
+}
+
+#int-intro {
+    animation: slideBottomInt-Ext 2.5s;
+}
+
+#int-intro-photo {
+    transition: 2s;
+    overflow: hidden;
+    animation: slideBottomImg 2.5s;
+}
+
+.int-left {
+    -webkit-animation: slideLeft 3s forwards;
+    animation: slideLeft 3s forwards;
+}
+
+.int-right {
+    -webkit-animation: slideRight 3s forwards;
+    animation: slideRight 3s forwards;
+}
+
+.int-left-reverse {
+    animation: slideLeftReverse 3s forwards;
+}
+
+@-webkit-keyframes slideLeft {
     0% {
         opacity: 0;
     }
@@ -123,12 +158,81 @@ html {
     }
 }
 
-@keyframes slide {
+@keyframes slideLeft {
     0% {
         opacity: 0;
     }
     100% {
         left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottomInt-Ext {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottomTitle {
+    0% {
+        transform: translateY(60%) skewX(-20deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) skewX(-20deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottomImg {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
         opacity: 1;
     }
 }

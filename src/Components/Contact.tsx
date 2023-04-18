@@ -23,15 +23,15 @@ const Contact = () => {
                     {/* <div className='relative container h-screen mx-auto pt-6 pb-6 lg:w-[80%]'> */}
                     <div className='absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 w-[80%] lg:left-[70%] xl:left-[80%] lg:w-[30rem] text-white bg-[#140005]/70 rounded-2xl xl:bg-transparent'>
                         <h1 className='ext-[1rem] sm:text-[1.6rem] md:text-[1.9rem] lg:text-[2.1rem] mb-6 ml-[5%] mt-[3%] xl:ml-0 xl:mt-0'>Magic Detailing</h1>
-                        {contactInfo.map((info) => {
-                            return <div className="flex items-center my-[2rem] ">
+                        {contactInfo.map((info, index) => {
+                            return <div className="flex items-center my-[2rem]" key={index}>
                                 <img src={info[0]} alt="contact-img" className="h-[1.2rem] sm:h-[1.5rem] md:h-[1.8rem] lg:h-[2.3rem] ml-[1.8rem] md:ml-[3rem] mr-[1rem] xl:ml-[2rem]" />
                                 <span className='text-[0.7rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]'>{info[1]}</span>
                             </div>
                         })}
                         <div className="flex justify-center mt-[2rem]">
-                            {media.map((photo) => {
-                                return <a href={photo[1]}><img src={photo[0]} alt="" className="h-[1.5rem] sm:h-[2.2rem] md:h-[2.5rem] lg:h-[3rem] xl:h-[3.5rem] mx-[1rem]" /></a>
+                            {media.map((photo, index) => {
+                                return <a href={photo[1]}><img src={photo[0]} key={index} alt="" className="h-[1.5rem] sm:h-[2.2rem] md:h-[2.5rem] lg:h-[3rem] xl:h-[3.5rem] mx-[1rem]" /></a>
                             })}
                         </div>
                         <div>
