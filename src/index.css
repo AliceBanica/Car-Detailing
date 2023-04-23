@@ -117,6 +117,10 @@ html {
     }
 }
 
+#gallery-first-page {
+    animation: slideBottom 1.5s;
+}
+
 #contact,
 #home {
     -webkit-animation: slideLeft 3s forwards;

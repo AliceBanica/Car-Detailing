@@ -24,10 +24,10 @@ const Gallery = () => {
 
             <ScrollPage page={0}>
                 <Animator animation={batch(Fade(), MoveOut(0, -200))} >
-                    <div className='h-screen'>
+                    <div className='h-screen' >
                         <div className='flex justify-center items-center h-[7rem] md:h-[10rem] text-[2.2rem]'>Galerie</div>
                         <div className='flex flex-col justify-center items-center '>
-                            <div className='-top-[4rem] sm:-top-[1rem] md:-top-[10rem] lg:-top-[8rem] relative w-[100%] h-screen border-b-2 border-red-500 -z-10' key={0}>
+                            <div className='-top-[4rem] sm:-top-[1rem] md:-top-[10rem] lg:-top-[8rem] relative w-[100%] h-screen border-b-2 border-red-500 -z-10' key={0} id="gallery-first-page">
                                 <div className='relative flex flex-col justify-center h-full lg:w-[80%] xl:w-[60%] mx-auto'>
                                     <div className='relative mx-[1rem] '>
                                         <h1 className='text-[1.3rem] md:text-[1.7rem] border-b-[0.2rem]'>{sectionInfo[0][1]}</h1>
