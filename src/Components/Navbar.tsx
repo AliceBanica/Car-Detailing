@@ -11,7 +11,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className=' w-full bg-black'>
+        <nav className='w-full bg-black sticky top-0 z-10'>
             <div className='relative container mx-auto pt-6 pb-6 lg:w-[80%] '>
                 <div className='flex items-center justify-between '>
                     <div className='flex-1'>

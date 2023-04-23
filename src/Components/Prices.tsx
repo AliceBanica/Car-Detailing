@@ -13,25 +13,25 @@ const Prices = () => {
                     <div className='flex justify-center mt-4 mb-2 text-[1.2rem] ext-[1rem] sm:text-[1.6rem] md:text-[1.9rem] lg:text-[2.1rem]' id="prices-title">Preturi</div>
                     <div className='flex justify-center w-[90%] ml-[5%] lg:w-[80%] lg:ml-[10%] mb-[2%]' id="prices-container">
                         <div className='w-full'>
-                            <h1 className='mt-1 mb-2 text-[1rem] ext-[1rem] sm:text-[1.4rem] md:text-[1.4rem] lg:text-[2rem]'>Interior</h1>
+                            <h1 className='mt-1 mb-2 text-[1rem] ext-[1rem] sm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.5rem]'>Exterior</h1>
                             {interior.map((service, index) => {
-                                return <div className='t-prices mt-1 text-[0.8rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.7rem]' key={index}>
+                                return <div className='t-prices mt-[0rem] text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]' key={index}>
                                     <span className='t-service'>{service[0]}</span>
                                     <span className='t-dots'></span>
                                     <span className='t-price'>{service[1]}</span>
                                 </div>
                             })}
-                            <h1 className='mt-1 mb-2 text-[1rem] ext-[1rem] sm:text-[1.4rem] md:text-[1.4rem] lg:text-[2rem]'>Exterior</h1>
+                            <h1 className='mt-1 mb-2 text-[1rem] ext-[1rem] sm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.5rem]'>Interior</h1>
                             {exterior.map((service, index) => {
-                                return <div className='t-prices mt-1 text-[0.8rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.7rem]' key={index}>
+                                return <div className='t-prices mt-0 text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]' key={index}>
                                     <span className='t-service'>{service[0]}</span>
                                     <span className='t-dots'></span>
                                     <span className='t-price'>{service[1]}</span>
                                 </div>
                             })}
-                            <h1 className='mt-1 mb-2 text-[1rem] ext-[1rem] sm:text-[1.4rem] md:text-[1.4rem] lg:text-[2rem]'>Canapele</h1>
+                            <h1 className='mt-1 mb-2 text-[1rem] ext-[1rem] sm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.5rem]'>Canapele</h1>
                             {canapele.map((service, index) => {
-                                return <div className='t-prices mt-1 text-[0.8rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.7rem]' key={index}>
+                                return <div className='t-prices mt-0 text-[0.8rem] sm:text-[1rem] md:text-[1.1rem] lg:text-[1.2rem]' key={index}>
                                     <span className='t-service'>{service[0]}</span>
                                     <span className='t-dots'></span>
                                     <span className='t-price'>{service[1]}</span>

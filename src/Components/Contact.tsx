@@ -22,11 +22,11 @@ const Contact = () => {
                 <div className='absolute -left-[10rem] h-screen w-full' id="contact">
                     {/* <div className='relative container h-screen mx-auto pt-6 pb-6 lg:w-[80%]'> */}
                     <div className='absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 w-[80%] lg:left-[70%] xl:left-[80%] lg:w-[30rem] text-white bg-[#140005]/70 rounded-2xl xl:bg-transparent'>
-                        <h1 className='ext-[1rem] sm:text-[1.6rem] md:text-[1.9rem] lg:text-[2.1rem] mb-6 ml-[5%] mt-[3%] xl:ml-0 xl:mt-0'>Magic Detailing</h1>
+                        <h1 className='ext-[1rem] sm:text-[1.4rem] md:text-[1.6rem] lg:text-[1.8rem] mb-6 ml-[5%] mt-[3%] xl:ml-0 xl:mt-0'>Magic Detailing</h1>
                         {contactInfo.map((info, index) => {
                             return <div className="flex items-center my-[2rem]" key={index}>
-                                <img src={info[0]} alt="contact-img" className="h-[1.2rem] sm:h-[1.5rem] md:h-[1.8rem] lg:h-[2.3rem] ml-[1.8rem] md:ml-[3rem] mr-[1rem] xl:ml-[2rem]" />
-                                <span className='text-[0.7rem] sm:text-[1rem] md:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.6rem]'>{info[1]}</span>
+                                <img src={info[0]} alt="contact-img" className="h-[1.1rem] sm:h-[1.3rem] md:h-[1.5rem] lg:h-[1.8rem] ml-[1.8rem] md:ml-[3rem] mr-[1rem] xl:ml-[2rem]" />
+                                <span className='text-[0.7rem] sm:text-[0.9rem] md:text-[1.1rem] lg:text-[1.3rem] xl:text-[1.4rem]'>{info[1]}</span>
                             </div>
                         })}
                         <div className="flex justify-center mt-[2rem]">
@@ -41,7 +41,7 @@ const Contact = () => {
                                 style={{ border: "0" }}
                                 loading="lazy"
                                 title="baicoi-map"
-                                className='w-[90%] xl:w-full h-[10rem] md:h-[12rem] lg:h-[15rem] mt-[2rem] ml-[5%] mb-[4%] xl:mb-0 xl:ml-0 rounded-2xl'></iframe>
+                                className='w-[90%] xl:w-full h-[10rem] md:h-[12rem] lg:h-[14rem] mt-[2rem] ml-[5%] mb-[4%] xl:mb-0 xl:ml-0 rounded-2xl'></iframe>
                         </div>
                     </div>
                 </div>

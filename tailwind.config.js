@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: ["./index.html", "./src/**/*.tsx"],
+    content: [
+        "./index.html",
+        "./src/**/*.tsx",
+        { transform: (content) => content.replace(/taos:/g, "") },
+    ],
+
     theme: {
         backgroundImage: (theme) => ({
             "home-img": "url('./src/assets/bg-image-home.png')",
@@ -20,7 +25,10 @@ export default {
             "animate-[fade-in_1s_ease-in-out]",
             "animate-[slide-right_1s_ease-in-out]",
             "animate-[fade-in-left_1s_ease-in-out]",
+            "!duration-[0ms]",
+            "!delay-[0ms]",
+            'html.js :where([class*="taos:"]:not(.taos-init))',
         ],
     },
-    plugins: [],
+    plugins: [require("taos/plugin")],
 };
