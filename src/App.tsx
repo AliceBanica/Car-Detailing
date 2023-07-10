@@ -1,4 +1,4 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Router } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import DetailingInterior from './Components/DetailingInterior';
@@ -10,7 +10,7 @@ import Contact from './Components/Contact';
 function App() {
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/preturi" element={<Prices />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 

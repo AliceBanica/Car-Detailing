@@ -107,6 +107,16 @@ html {
     top: 2rem;
 }
 
+.g-decoration-first-page {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    rotate: 45deg;
+
+    position: absolute;
+    right: 0;
+    top: 12rem;
+}
 @media (max-width: 768px) {
     .g-decoration {
         width: 1.1rem;
@@ -272,4 +282,92 @@ html {
 }
 body.modal-active {
     overflow: hidden;
+}
+
+/* swiper */
+
+.swiper-container {
+    background: rgb(215, 215, 215);
+    background: linear-gradient(
+        163deg,
+        rgba(215, 215, 215, 0.8) 0%,
+        rgba(207, 156, 156, 0.2) 42%,
+        rgba(233, 192, 192, 0.7) 100%
+    );
+    width: 90%;
+    border-radius: 0.5rem;
+    opacity: 0.7;
+    box-shadow: 0 0 15px #000000;
+}
+
+.swiper-div {
+    width: 90%;
+}
+
+.swiper-image {
+    width: 100%;
+    height: 25rem;
+    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 0.5rem;
+    -moz-box-shadow: 0 0 3px #1c1b1b;
+    -webkit-box-shadow: 0 0 3px #1c1b1b;
+    box-shadow: 0 0 10px #1c1b1b;
+}
+
+.prev-image,
+.next-image {
+    display: flex;
+    height: 17rem;
+    margin-top: 4rem;
+    opacity: 0.6;
+    box-shadow: none;
+}
+
+.prev-image {
+    transform: perspective(35rem) rotateY(-20deg);
+    padding-right: 2rem;
+    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.next-image {
+    transform: perspective(35rem) rotateY(20deg);
+    padding-left: 2rem;
+    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slick-center .swiper-image {
+    transform: perspective(35rem) rotateY(0);
+    transition: transform 2s cubic-bezier(0.23, 1, 0.32, 1); /* Updated transition for center image */
+}
+
+@media (min-width: 601px) and (max-width: 719px) {
+    .swiper-image {
+        height: 20rem;
+        margin: 0;
+    }
+    .prev-image,
+    .next-image {
+        display: flex;
+        height: 12rem;
+        margin-top: 4rem;
+        opacity: 0.6;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .swiper-container {
+        background: none;
+        box-shadow: none;
+        width: 90%;
+    }
+    .swiper-image {
+        height: 15rem;
+        margin: 0;
+    }
+    .prev-image,
+    .next-image {
+        opacity: 0;
+        position: absolute;
+    }
 }
